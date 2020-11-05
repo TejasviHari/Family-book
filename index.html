@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>My family</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+
+    <body>
+        <h1>My family</h1>
+
+        <img src="Family Book cover - Copy.jpg" id="imagee">
+<br>
+        <button id="next" type="button" onclick="turn()">Turn page</button>
+
+    </body>
+
+    <script>
+var images=["https://www.clipartkey.com/mpngs/m/205-2050687_transparent-png-dad-and-daughter-cartoon-png.png",
+"https://cdn4.iconfinder.com/data/icons/family-cartoon/512/g10485-512.png",
+"https://png.pngtree.com/png-clipart/20190604/original/pngtree-vector-cartoon-girl-with-glasses-png-image_1044496.jpg",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTrbLZKI7pSLM42VnRlbocM8upzytsVMtkUOg&usqp=CAU",
+"https://webstockreview.net/images/aunt-clipart-cartoon-9.jpg",
+"https://cdn1.vectorstock.com/i/1000x1000/67/45/man-cartoon-icon-vector-13306745.jpg",
+"https://image.shutterstock.com/image-vector/cute-grandma-illustration-260nw-628441763.jpg",
+];
+var i=0;
+function turn(){
+  document.getElementById("imagee").src=images[i];
+  i++;
+  
+}
+if (i==9)
+  {
+    i=0
+  }
+    </script>
+
+</html>
